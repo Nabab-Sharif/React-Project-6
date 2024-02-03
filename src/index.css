@@ -33,3 +33,13 @@ h4 {
 .bottom_border {
   border-bottom: 0.2em solid #0074a6;
 }
+
+.x-hover:hover::after {
+  content: "X";
+  opacity: 0.4;
+}
+
+.o-hover:hover::after {
+  content: "O";
+  opacity: 0.4;
+}
