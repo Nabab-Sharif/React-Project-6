@@ -3,7 +3,7 @@ import Strike from './Strike'
 
 
 
-const Board = ({ tiles, onTileClick, playerTurn }) => {
+const Board = ({ tiles, onTileClick, playerTurn, strikeClass }) => {
 
 
   return (
@@ -18,7 +18,7 @@ const Board = ({ tiles, onTileClick, playerTurn }) => {
         <Tile onClick={() => onTileClick(6)} value={tiles[6]} className="right_border" playerTurn={playerTurn} />
         <Tile onClick={() => onTileClick(7)} value={tiles[7]} className="right_border " playerTurn={playerTurn} />
         <Tile onClick={() => onTileClick(8)} value={tiles[8]} playerTurn={playerTurn} />
-        <Strike />
+        <Strike strikeClass={strikeClass} />
       </div>
     </>
   )
